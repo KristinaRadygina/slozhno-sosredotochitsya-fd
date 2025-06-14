@@ -6,9 +6,9 @@
 :root {
   /* Основные цвета */
   --primary-color: #000028;
-  --secondary-color: #F1B2CE;
-  --accent-color: #FF0070;
-  --title-color: #DB00FF;
+  --secondary-color: #f1b2ce;
+  --accent-color: #ff0070;
+  --title-color: #db00ff;
 
   /* Текст */
   --main-font-size: 18px;
@@ -21,7 +21,7 @@
 
   /* Кнопки */
   --button-primary-color: var(--accent-color);
-  --button-primary-color-hover: #FF007066;
+  --button-primary-color-hover: #ff007066;
 
   /* Переопределяемые переменные */
   --section-title-color: var(--accent-color);
@@ -31,9 +31,10 @@
 
   /* Пути */
   --bg-img-path: url(../images/cover-image-dark.png);
-} 
+}
 
 @media (width >= 768px) {
+
   :root {
     --page-padding: 20px;
   }

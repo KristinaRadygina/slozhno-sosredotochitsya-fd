@@ -10,14 +10,14 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   /* Основные цвета */
-  --primary-color: #FFF1F7;
+  --primary-color: #fff1f7;
   --secondary-color: #353430;
-  --accent-color: #FF8DCB;
-  --title-color: #FFC2E6;
+  --accent-color: #ff8dcb;
+  --title-color: #ffc2e6;
 
   /* Кнопки */
   --button-primary-color: var(--secondary-color);
-  --button-primary-color-hover: #32312D66;
+  --button-primary-color-hover: #32312d66;
 
   /* Переопределяемые переменные */
   --section-title-color: var(--secondary-color);
@@ -25,28 +25,30 @@
   --main-text-color: var(--secondary-color);
   --main-background-color: var(--primary-color);
 
-    /* Пути */
-    --bg-img-path: url(../images/cover-image-light.png);
+  /* Пути */
+  --bg-img-path: url(../images/cover-image-light.png);
 }
 
 /* COMMON-STYLES START */
-.theme-light .rec-icon_header::before, 
+
+.theme-light .rec-icon_header::before,
 .theme-light .rec-icon_header::after {
   display: none;
 }
 /* COMMON-STYLES END */
 
 @media (prefers-color-scheme: light) {
+
   :root {
     /* Основные цвета */
-    --primary-color: #FFF1F7;
+    --primary-color: #fff1f7;
     --secondary-color: #353430;
-    --accent-color: #FF8DCB;
-    --title-color: #FFC2E6;
+    --accent-color: #ff8dcb;
+    --title-color: #ffc2e6;
 
     /* Кнопки */
     --button-primary-color: var(--secondary-color);
-    --button-primary-color-hover: #32312D66;
+    --button-primary-color-hover: #32312d66;
 
     /* Переопределяемые переменные */
     --section-title-color: var(--secondary-color);
@@ -54,15 +56,15 @@
     --main-text-color: var(--secondary-color);
     --main-background-color: var(--primary-color);
   }
-  
+
   /* COMMON-STYLES START */
-  .theme-light .rec-icon_header::before, 
+
+  .theme-light .rec-icon_header::before,
   .theme-light .rec-icon_header::after {
     display: none;
   }
   /* COMMON-STYLES END */
-  /* Дублируем переменные светлой темы */    
+  /* Дублируем переменные светлой темы */
 }
 
-
-/* Остальные стили, только при необходимости */ 
+/* Остальные стили, только при необходимости */

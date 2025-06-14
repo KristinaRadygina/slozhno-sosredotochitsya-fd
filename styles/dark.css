@@ -11,13 +11,13 @@
   */
   /* Основные цвета */
   --primary-color: #000028;
-  --secondary-color: #F1B2CE;
-  --accent-color: #FF0070;
-  --title-color: #DB00FF;
+  --secondary-color: #f1b2ce;
+  --accent-color: #ff0070;
+  --title-color: #db00ff;
 
   /* Кнопки */
   --button-primary-color: var(--accent-color);
-  --button-primary-color-hover: #FF007066;
+  --button-primary-color-hover: #ff007066;
 
   /* Переопределяемые переменные */
   --section-title-color: var(--accent-color);
