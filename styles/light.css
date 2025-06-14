@@ -31,7 +31,7 @@
 
 /* COMMON-STYLES START */
 .theme-light .rec-icon_header::before, 
-.theme-light .rec-icon_header::after  {
+.theme-light .rec-icon_header::after {
   display: none;
 }
 /* COMMON-STYLES END */
@@ -57,13 +57,13 @@
   
   /* COMMON-STYLES START */
   .theme-light .rec-icon_header::before, 
-  .theme-light .rec-icon_header::after  {
+  .theme-light .rec-icon_header::after {
     display: none;
   }
   /* COMMON-STYLES END */
 
   /* Дублируем переменные светлой темы */    
-  }
+}
 
 
 /* Остальные стили, только при необходимости */ 

@@ -8,6 +8,7 @@
   font-family: 'IBM Plex Mono', monospace;
   font-weight: var(--normal-text-weight);
   background-color: var(--main-background-color);
+  background-attachment: fixed;
 }
 
 .title {
@@ -121,7 +122,6 @@
 
 .header__theme-menu-button {
   background-color: transparent;
-  border: none;
   text-transform: lowercase;
   font-size: var(--main-font-size);
   font-weight: var(--normal-text-weight);
