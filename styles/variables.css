@@ -2,3 +2,39 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+:root {
+  /* Основные цвета */
+  --primary-color: #000028;
+  --secondary-color: #F1B2CE;
+  --accent-color: #FF0070;
+  --title-color: #DB00FF;
+
+  /* Текст */
+  --main-font-size: 18px;
+  --main-line-height: 1.3em;
+  --normal-text-weight: 400;
+  --bold-text-weight: 700;
+
+  /* Отступы */
+  --page-padding: 10px;
+
+  /* Кнопки */
+  --button-primary-color: var(--accent-color);
+  --button-primary-color-hover: #FF007066;
+
+  /* Переопределяемые переменные */
+  --section-title-color: var(--accent-color);
+  --subsection-title-color: var(--primary-color);
+  --main-text-color: var(--secondary-color);
+  --main-background-color: var(--primary-color);
+
+  /* Пути */
+  --bg-img-path: url(../images/cover-image-dark.png);
+} 
+
+@media (width >= 768px) {
+  :root {
+    --page-padding: 20px;
+  }
+}
