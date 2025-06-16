@@ -20,6 +20,7 @@
   --button-primary-color-hover: #32312d66;
 
   /* Переопределяемые переменные */
+  --rec-icon-color: var(--secondary-color);
   --section-title-color: var(--secondary-color);
   --subsection-title-color: var(--secondary-color);
   --main-text-color: var(--secondary-color);
@@ -51,16 +52,20 @@
     --button-primary-color-hover: #32312d66;
 
     /* Переопределяемые переменные */
+    --rec-icon-color: var(--secondary-color);
     --section-title-color: var(--secondary-color);
     --subsection-title-color: var(--secondary-color);
     --main-text-color: var(--secondary-color);
     --main-background-color: var(--primary-color);
+
+    /* Пути */
+    --bg-img-path: url(../images/cover-image-light.png);
   }
 
   /* COMMON-STYLES START */
 
-  .theme-light .rec-icon_header::before,
-  .theme-light .rec-icon_header::after {
+  .rec-icon_header::before,
+  .rec-icon_header::after {
     display: none;
   }
   /* COMMON-STYLES END */

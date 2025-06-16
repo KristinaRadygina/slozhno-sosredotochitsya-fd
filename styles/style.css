@@ -9,6 +9,9 @@
   font-weight: var(--normal-text-weight);
   background-color: var(--main-background-color);
   background-attachment: fixed;
+  background-image: var(--bg-img-path);
+  background-position: center;
+  background-size: cover;
 }
 
 .title {
@@ -27,15 +30,15 @@
 .rec-icon_start {
   top: var(--page-padding);
   right: var(--page-padding);
-  border-top: 1px solid var(--accent-color);
-  border-right: 1px solid var(--accent-color);
+  border-top: 1px solid var(--rec-icon-color);
+  border-right: 1px solid var(--rec-icon-color);
 }
 
 .rec-icon_end {
   bottom: var(--page-padding);
   left: var(--page-padding);
-  border-left: 1px solid var(--accent-color);
-  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--rec-icon-color);
+  border-bottom: 1px solid var(--rec-icon-color);
 }
 
 .rec-icon_header::before {
@@ -44,16 +47,16 @@
   right: calc(100% + 4px);
   text-transform: uppercase;
   font-weight: var(--normal-text-weight);
-  color: var(--accent-color);
+  color: var(--rec-icon-color);
 }
 
 .rec-icon_header::after {
   content: '';
   width: 9px;
   height: 9px;
-  background-color: var(--accent-color);
+  background-color: var(--rec-icon-color);
   border-radius: 50%;
-  box-shadow: 0 0 4px 2px var(--accent-color);
+  box-shadow: 0 0 4px 2px var(--rec-icon-color);
   position: absolute;
   margin: auto;
   inset: 0;
@@ -104,12 +107,6 @@
   grid-template-rows: 1fr min-content 1fr;
 }
 
-.decorated-zone {
-  background-image: var(--bg-img-path);
-  background-position: center;
-  background-size: cover;
-}
-
 .header__theme-menu {
   justify-items: end;
   align-self: center;
@@ -133,14 +130,14 @@
   border: 1px solid transparent;
 }
 
-.header__theme-menu-button_active {
-  pointer-events: none;
-  border: 1px solid var(--button-primary-color);
-}
-
 .header__theme-menu-button:focus-visible {
   outline: none;
-  border-bottom: 1px solid var(--button-primary-color);
+  border-bottom: 1px solid currentColor;
+}
+
+.header__theme-menu-button_active {
+  pointer-events: none;
+  border: 1px solid currentColor;
 }
 
 .header__theme-menu-button:hover:not(.header__theme-menu-button_active) {
@@ -162,8 +159,12 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .header__theme-menu,
   .header__title {
+    margin: 0 -20px; /* Решение не самое лучшее, но применено для PP, и как будто ошибка в макете, так как логика отображения выбивается от общей концепции */
+    grid-column: span 2;
+  }
+
+  .header__theme-menu {
     grid-column: span 2;
   }
 
@@ -232,12 +233,12 @@
 }
 
 .card__link:hover {
-  border-bottom: 1px solid var(--secondary-color);
+  border-bottom: 1px solid currentColor;
 }
 
 .card__link:focus-visible {
   outline: none;
-  border: 1px solid var(--secondary-color);
+  border: 1px solid currentColor;
 }
 
 .section__gallery {
@@ -287,33 +288,25 @@
     grid-column: 1;
   }
 
-  .section__gallery-image_rock {
-    grid-column: span 2;
+  .section__gallery-image {
     object-position: center;
     object-fit: cover;
+  }
+
+  .section__gallery-image_rock {
+    grid-column: span 2;
   }
 
   .section__gallery-image_icecream {
     grid-row: span 2;
-    object-position: center;
-    object-fit: cover;
   }
 
   .section__gallery-image_cassete {
     grid-row: span 2;
-    object-position: center;
-    object-fit: cover;
-  }
-
-  .section__gallery-image_books {
-    object-position: center;
-    object-fit: cover;
   }
 
   .section__gallery-image_street {
     grid-column: span 2;
-    object-position: center;
-    object-fit: cover;
   }
 }
 
