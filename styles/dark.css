@@ -20,6 +20,7 @@
   --button-primary-color-hover: #ff007066;
 
   /* Переопределяемые переменные */
+  --rec-icon-color: var(--accent-color);
   --section-title-color: var(--accent-color);
   --subsection-title-color: var(--primary-color);
   --main-text-color: var(--secondary-color);
