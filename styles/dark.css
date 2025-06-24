@@ -29,7 +29,3 @@
   /* Пути */
   --bg-img-path: url(../images/cover-image-dark.png);
 }
-
-.theme-dark .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
-}

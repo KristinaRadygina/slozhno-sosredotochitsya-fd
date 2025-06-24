@@ -64,8 +64,8 @@
 
   /* COMMON-STYLES START */
 
-  .rec-icon_header::before,
-  .rec-icon_header::after {
+  .theme-auto .rec-icon_header::before,
+  .theme-auto .rec-icon_header::after {
     display: none;
   }
   /* COMMON-STYLES END */
